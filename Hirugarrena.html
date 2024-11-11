@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MMA</title>
+    <style>
+        body { background-color: #00ffead8 ; font-family: Arial, sans-serif; color: #141212dd}
+        h1 { text-align: center; color: #0f7c79; }
+        h2 { font-size:20px; color: black}
+        nav a { margin-right:20px; font-weight: bold; text-decoration: none; color:#0f7c79 }
+        .txikia {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .handia {
+            width: 400px;
+        }
+    </style>
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<h1><span style="color: rgb(255, 0, 0);">Lehiaketa</span></h1>
+    <nav>
+        <a href="Lehenengoa.html">Historia</a>
+        <a href="Bigarrena.html">Jokalariak</a>
+        <a href="Sarrera.html">Sarrera</a>
+    </nav>
+    </div>
+
+</body>
+<img src="./argazkia.png" alt="Irudi txikia" onclick="handitu(this)" class="txikia">
+
+<script>
+    function handitu(irudia) {
+        if (irudia.classList.contains("txikia")) {
+            irudia.classList.remove("txikia");
+            irudia.classList.add("handia");
+        } else {
+            irudia.classList.remove("handia");
+            irudia.classList.add("txikia");
+        }
+    }
+</script>
+</html>
